@@ -16,6 +16,15 @@
 		8A5E4D5A2BC89D1800A117A5 /* hikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E4D592BC89D1800A117A5 /* hikeTests.swift */; };
 		8A5E4D642BC89D1800A117A5 /* hikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E4D632BC89D1800A117A5 /* hikeUITests.swift */; };
 		8A5E4D662BC89D1800A117A5 /* hikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5E4D652BC89D1800A117A5 /* hikeUITestsLaunchTests.swift */; };
+		8AAC86AC2BC8ADF10063FB86 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC86AB2BC8ADF10063FB86 /* CardView.swift */; };
+		8AAC86AF2BC8AF470063FB86 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC86AE2BC8AF470063FB86 /* CustomBackgroundView.swift */; };
+		8AAC86B32BC8B6C20063FB86 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC86B22BC8B6C20063FB86 /* ColorExtension.swift */; };
+		8AAC86B62BC8C48A0063FB86 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC86B52BC8C48A0063FB86 /* CustomButtonView.swift */; };
+		8AAC86B82BC8CBFB0063FB86 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC86B72BC8CBFB0063FB86 /* GradientButton.swift */; };
+		8AAC86BA2BC8D1FC0063FB86 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC86B92BC8D1FC0063FB86 /* CustomCircleView.swift */; };
+		8AAC86BC2BC8D3450063FB86 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAC86BB2BC8D3450063FB86 /* MotionAnimationView.swift */; };
+		8ACCBAA52BC9A90E008EDE16 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACCBAA42BC9A90E008EDE16 /* SettingsView.swift */; };
+		8ACF99DB2BCB321D002E529C /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACF99DA2BCB321D002E529C /* CustomListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +57,15 @@
 		8A5E4D5F2BC89D1800A117A5 /* hikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A5E4D632BC89D1800A117A5 /* hikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hikeUITests.swift; sourceTree = "<group>"; };
 		8A5E4D652BC89D1800A117A5 /* hikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AAC86AB2BC8ADF10063FB86 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8AAC86AE2BC8AF470063FB86 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		8AAC86B22BC8B6C20063FB86 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		8AAC86B52BC8C48A0063FB86 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		8AAC86B72BC8CBFB0063FB86 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		8AAC86B92BC8D1FC0063FB86 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
+		8AAC86BB2BC8D3450063FB86 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		8ACCBAA42BC9A90E008EDE16 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8ACF99DA2BCB321D002E529C /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +116,10 @@
 		8A5E4D422BC89D1600A117A5 /* hike */ = {
 			isa = PBXGroup;
 			children = (
+				8ACCBAA32BC9A8FA008EDE16 /* Screen */,
+				8AAC86B42BC8B7B20063FB86 /* Components */,
+				8AAC86B12BC8B6AC0063FB86 /* Utility */,
 				8A5E4D432BC89D1600A117A5 /* hikeApp.swift */,
-				8A5E4D452BC89D1600A117A5 /* ContentView.swift */,
 				8A5E4D472BC89D1800A117A5 /* Assets.xcassets */,
 				8A5E4D4C2BC89D1800A117A5 /* Persistence.swift */,
 				8A5E4D4E2BC89D1800A117A5 /* hike.xcdatamodeld */,
@@ -131,6 +151,37 @@
 				8A5E4D652BC89D1800A117A5 /* hikeUITestsLaunchTests.swift */,
 			);
 			path = hikeUITests;
+			sourceTree = "<group>";
+		};
+		8AAC86B12BC8B6AC0063FB86 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8AAC86B22BC8B6C20063FB86 /* ColorExtension.swift */,
+				8AAC86B72BC8CBFB0063FB86 /* GradientButton.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8AAC86B42BC8B7B20063FB86 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8AAC86AB2BC8ADF10063FB86 /* CardView.swift */,
+				8AAC86AE2BC8AF470063FB86 /* CustomBackgroundView.swift */,
+				8AAC86B52BC8C48A0063FB86 /* CustomButtonView.swift */,
+				8AAC86B92BC8D1FC0063FB86 /* CustomCircleView.swift */,
+				8AAC86BB2BC8D3450063FB86 /* MotionAnimationView.swift */,
+				8ACF99DA2BCB321D002E529C /* CustomListRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8ACCBAA32BC9A8FA008EDE16 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				8A5E4D452BC89D1600A117A5 /* ContentView.swift */,
+				8ACCBAA42BC9A90E008EDE16 /* SettingsView.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +317,16 @@
 				8A5E4D4D2BC89D1800A117A5 /* Persistence.swift in Sources */,
 				8A5E4D462BC89D1600A117A5 /* ContentView.swift in Sources */,
 				8A5E4D502BC89D1800A117A5 /* hike.xcdatamodeld in Sources */,
+				8ACF99DB2BCB321D002E529C /* CustomListRowView.swift in Sources */,
+				8AAC86B62BC8C48A0063FB86 /* CustomButtonView.swift in Sources */,
+				8AAC86B82BC8CBFB0063FB86 /* GradientButton.swift in Sources */,
+				8AAC86BA2BC8D1FC0063FB86 /* CustomCircleView.swift in Sources */,
+				8AAC86AF2BC8AF470063FB86 /* CustomBackgroundView.swift in Sources */,
 				8A5E4D442BC89D1600A117A5 /* hikeApp.swift in Sources */,
+				8AAC86BC2BC8D3450063FB86 /* MotionAnimationView.swift in Sources */,
+				8ACCBAA52BC9A90E008EDE16 /* SettingsView.swift in Sources */,
+				8AAC86B32BC8B6C20063FB86 /* ColorExtension.swift in Sources */,
+				8AAC86AC2BC8ADF10063FB86 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

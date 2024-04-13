@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // MARK: - PROPERTIES
+    private let alternateAppIcons: [String] = [
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Map",
+        "AppIcon-Mushroom",
+        "AppIcon-Camera",
+        "AppIcon-Backpack",
+        "AppIcon-Campfire"
+    ]
+    
     var body: some View {
         List {
             // MARK: - SECTION: HEADER
@@ -49,6 +59,42 @@ struct SettingsView: View {
             }
             .listRowSeparator(.hidden)
             // MARK: - SECTION: ICONS
+            Section (
+                header: Text("ALTERNATE ICONS")
+            ) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack (spacing: 12) {
+                        ForEach(alternateAppIcons.indices, id: \.self) {
+                            item in
+                            Button {
+                                UIApplication.shared
+                                    .setAlternateIconName(alternateAppIcons[item])
+                                {
+                                    error in
+                                    if error != nil {
+                                        print("Failed request to update the app's icon")
+                                    } else {
+                                        print("Success!")
+                                    }
+                                }
+                            } label: {
+                                Image("\(alternateAppIcons[item])")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(16)
+                            }
+                        }
+                        .buttonStyle(.borderless)
+                    }
+                }
+                
+                Text("Choose your favourite app icon from the collection above.")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.secondary)
+                    .font(.footnote)
+            }
             
             
             // MARK: - SECTION: ABOUT
